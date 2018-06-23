@@ -1,0 +1,97 @@
+body {
+    background-color: aqua;
+}
+
+#calcContainer {
+    margin: auto;
+    width: 50%;
+    min-width: 250px;
+    border: 3px solid red;
+    padding: 10px;
+}
+
+#screen {
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 5px;
+    font-size: 70px;
+    text-align: right;
+
+}
+
+#topRow {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+#secondRow {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+#thirdRow {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+#fourthRow {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+#fifthRow {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+#fButtons {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: auto;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.numbers {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: auto;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.operators {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: auto;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
