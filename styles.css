@@ -3,6 +3,7 @@ body {
 }
 
 #calcContainer {
+    background-color: white;
     margin: auto;
     width: 50%;
     min-width: 250px;
@@ -68,6 +69,7 @@ body {
 
 #fButtons {
     border: 1px solid blue;
+    background-color: azure;
     padding: 10px;
     margin: auto;
     width: 28px;
@@ -78,6 +80,7 @@ body {
 
 .numbers {
     border: 1px solid blue;
+    background-color: rosybrown;
     padding: 10px;
     margin: auto;
     width: 28px;
@@ -88,6 +91,18 @@ body {
 
 .operators {
     border: 1px solid blue;
+    background-color: green;
+    padding: 10px;
+    margin: auto;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#equals {
+    border: 1px solid blue;
+    background-color: green;
     padding: 10px;
     margin: auto;
     width: 28px;
