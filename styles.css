@@ -67,7 +67,7 @@ body {
 
 }
 
-#fButtons {
+.fButtons {
     border: 1px solid blue;
     background-color: azure;
     padding: 10px;

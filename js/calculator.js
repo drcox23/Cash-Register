@@ -21,6 +21,7 @@
     var total = 0;
     var operator;
 
+    // get numbers into the screen
     for (var i=0; i < printNumbers.length; i++){    
         printNumbers[i].addEventListener('click', numberScreen);
         console.log(printNumbers[i].innerHTML)
@@ -33,6 +34,7 @@
         
     }
 
+    // creating an event listener for operators EXCEPT for equals
     var getOps = document.getElementsByClassName("operators");
     
     for (var i=0; i < getOps.length; i++){
@@ -58,32 +60,51 @@
             operator = "/"
             getScreen.innerHTML = "";
         }
-    
-        // if (this.id === "equals"){
-        //     if (operator === "+"){
-        //         var total = memory + getScreen.innerHTML;
-        //         console.log(total);
-        //     }
-        // }
-
-        // console.log(operator);
-        // console.log(memory); 
-        
     }
 
-    
+    // activate equals operator
     var equalFunk = document.getElementById("equals");
     equalFunk.addEventListener('click', totalMe)
 
-    function totalMe(total){
-        total = getScreen.innerHTML
+    function totalMe(){
         if (operator === '+'){
-            var newTotal = memory + total;
+            var newTotal = parseFloat(memory) + parseFloat(getScreen.innerHTML);
             console.log(newTotal);
+            getScreen.innerHTML = newTotal;
+        } else if (operator === '-'){
+            var newTotal = parseFloat(memory) - parseFloat(getScreen.innerHTML);
+            console.log(newTotal);
+            getScreen.innerHTML = newTotal;
+        } else if (operator === 'x'){
+            var newTotal = parseFloat(memory) * parseFloat(getScreen.innerHTML);
+            console.log(newTotal);
+            getScreen.innerHTML = newTotal;
+        } else if (operator === '/'){
+            var newTotal = parseFloat(memory) / parseFloat(getScreen.innerHTML);
+            console.log(newTotal);
+            getScreen.innerHTML = newTotal;
         }
     }
 
+    // clearing and turning calc on and off
+    var clears = document.getElementById('clear');
+    clears.addEventListener('click', clearScreen);
 
+    function clearScreen(){
+        document.getElementById("screen").innerHTML = "";
+    }
+
+    var allClear = document.getElementById('clearAll');
+    allClear.addEventListener('click', clearAll);
+    var allOff = document.getElementById("off");
+    allOff.addEventListener('click', clearAll); 
+
+    function clearAll(){
+        document.getElementById("screen").innerHTML = "";
+        memory = 0;
+        total = 0;
+       
+    }
 
 
 
