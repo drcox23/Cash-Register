@@ -8,7 +8,9 @@ body {
     width: 50%;
     min-width: 250px;
     border: 3px solid red;
-    padding: 10px;
+    
+    padding-top: 20px;
+    /* padding: 10px; */
 }
 
 #screen {
@@ -109,4 +111,22 @@ body {
     height: 30px;
     line-height: 30px;
     text-align: center;
+}
+
+.cashReg {
+    flex-direction: column;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin: auto;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: blueviolet;
+    color: whitesmoke;
+
+}
+
+#hidden {
+    visibility: hidden;
 }

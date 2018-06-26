@@ -91,21 +91,37 @@
     clears.addEventListener('click', clearScreen);
 
     function clearScreen(){
-        document.getElementById("screen").innerHTML = "";
+        document.getElementById("screen").innerHTML = 0;
     }
 
     var allClear = document.getElementById('clearAll');
     allClear.addEventListener('click', clearAll);
     var allOff = document.getElementById("off");
-    allOff.addEventListener('click', clearAll); 
+    allOff.addEventListener('click', turnOff); 
 
     function clearAll(){
+        document.getElementById("screen").innerHTML = 0;
+        memory = 0;
+        total = 0;
+       
+    }
+
+    function turnOff(){
         document.getElementById("screen").innerHTML = "";
         memory = 0;
         total = 0;
        
     }
 
+    var allOn = document.getElementById("on");
+    allOn.addEventListener('click', turnOn); 
+
+    function turnOn(){
+        console.log('turn it on');
+
+    }
+
+    
 
 
 })();
