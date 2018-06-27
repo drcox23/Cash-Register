@@ -5,6 +5,7 @@
     var balance = 0
     var getScreen2 = document.getElementById('screen');
 
+    // deposit cash
     var deposit = document.getElementById('deposit');
     deposit.addEventListener('click', depositCash);
 
@@ -14,6 +15,7 @@
         console.log(balance);
     }
 
+    // withdraw cash
     var withdraw = document.getElementById('withdraw');
     withdraw.addEventListener('click', withdrawCash);
 
@@ -23,9 +25,17 @@
         getScreen2.innerHTML = 0;
         console.log(balance);
     } else {
-        getScreen2.innerHTML("error");
+        getScreen2.innerHTML = "error";
     }
     }
+
+    var viewBalance = document.getElementById('balance');
+    viewBalance.addEventListener('click', seeBalance);
+
+    function seeBalance(){
+        getScreen2.innerHTML = balance;
+    }
+    
 
 
 
