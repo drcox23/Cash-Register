@@ -26,7 +26,7 @@
         printNumbers[i].addEventListener('click', numberScreen);
         console.log(printNumbers[i].innerHTML)
         
-    }
+    };
 
     function numberScreen(){
         console.log('aloha');
