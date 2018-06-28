@@ -11,10 +11,7 @@
 
     var printNumbers = document.getElementsByClassName("numbers");
     var getScreen = document.getElementById('screen');
-    // var addOps = document.getElementById("add");
-    // var subOps = document.getElementById("subtract");
-    // var multOps = document.getElementById("multiply");
-    // var divideOps = document.getElementById("divide");
+    
 
     var numArr = [];
     var memory = 0;
@@ -91,7 +88,7 @@
     clears.addEventListener('click', clearScreen);
 
     function clearScreen(){
-        document.getElementById("screen").innerHTML = 0;
+        document.getElementById("screen").innerHTML = "";
     }
 
     var allClear = document.getElementById('clearAll');
@@ -100,7 +97,7 @@
     allOff.addEventListener('click', turnOff); 
 
     function clearAll(){
-        document.getElementById("screen").innerHTML = 0;
+        document.getElementById("screen").innerHTML = "";
         memory = 0;
         total = 0;
        
@@ -118,7 +115,7 @@
 
     function turnOn(){
         console.log('turn it on');
-
+        document.getElementById("screen").innerHTML = "";
     }
 
     
